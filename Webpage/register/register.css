@@ -1,0 +1,27 @@
+.registerRec {
+    width: 700px;
+    height: 500px;
+    background-color: #EAE6C1;
+    padding: 10px;
+    margin: 0;
+    border-radius: 25px 60px 30px 60px;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+
+.makeFriend {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.registerChild {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+
+input {
+    border-radius: 2.5px 6px 2.5px 6px;
+}

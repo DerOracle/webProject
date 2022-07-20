@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./text.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Login/login.html">login</a></li>
+        <li><a href="./Paralax/paralax.html">Paralax</a></li>
+    </ul>
+
+    <div class="projectPic"></div>
+    <div class="rectangle">
+<center>
+    <h1>This Project</h1>
+    <p>This web project will is a side project that i will use to get better at: frontend design (HTML, Css), JavaScript and integrating Firestore. <br>
+        The Idea is that i will create a webpage and slowly add designs that i like, and after that work on the back-end JavaScript and Firestore. <br>
+        And in the end be able to make a database with functional users to login with. <br> <br>
+
+        I do have some background in using Firestore(Firebase) and integrating it in to HTML/JavaScript from School projects <br>
+        At first I wanted to use SQLite as a local database for my wepage. But i realized that it was much more complicated to <br>
+        maneuver around and use in practice.
+    </p>
+
+</center>   
+</div>
+
+<div class="javaPic">
+
+</div>
+
+<div class="rectangleSqlite">
+    <h2 class="sqliteTitle">^SQLite test^</h2>
+
+    <p class="sqliteText">I experimented a bit with SQLite as shown in the picture above. I had done the very basic in SQL and made a table called "user". <br>
+                            Using the SQLite syntax is pretty simple, first you have to set up sqlite3 dependencies through "npm install sqlite3" and set up a <br>
+                            database which i called "database.db". As for the sqlite3 syntax, it startet with declaring to run a db function then to .run "sql syntax". 
+    </p>
+
+                            <div class="createTable"></div> 
+    <p class="sqliteTableP">So basically what is happening here is that i am calling sqlite3 dependencies through "db", then specifying that i will run a command with ".run". <br>
+                            Then i complete the line with the SQLite syntax ("CREATE TABLE user (values...)") <br> <br>
+                            After the table has been created it's time to add data to it. By declareing a variable (sql in this case) and give it properties of SQL INSERT syntax, <br>
+                            Then at the VALUES write all values as ? within the parantheses. I did this because adding the values as we run the db.run function makes the code <br>
+                            much more clearer and gives us more versatility as to what kind of information we can add, as i will add information into the table as arrays. <br> 
+    </p>
+                            <div class="sqliteAxios"></div>
+
+    <p class="sqliteAxiosP">Here I'm using an API called Axios which is an easy way to get randomized data which you can adjust to your liking. In this example i am <br>
+                            getting information like first_name, password, uid and id. After I have declared all of the values i wish to add, I then can go back to the db.run (sql, "data") <br>
+                            function and add the variable names in an array as shown in the picture above. Added a err function on the end to check if the data was inserted. <br>
+    </p>
+                            <div class="sqliteClose"></div>
+
+    <p class="sqliteCloseP">Something to note here is that it's always good to close of the db after you have updated with information, <br>
+                            and add an error check at the end in case of anything wrong in the code.
+    </p>
+                            <div class="sqliteSelect"></div>
+    <p class="sqliteSelectP">As for displaying the data that has been added to the database, we need to run a query with the SELECT (dataType, ColumnName, etc) From (table). <br>
+                            Same as before we need to make a variable (sql in this case(comented out the last one so they dont overwrite and cause trouble)) and have it be <br>
+                            SELECT * (* = everything) FROM users (table created previously) then call db.all and sql. Here we also have a function that calls for each row <br>
+                            and console logs it. We also have the err method in case of anything wrong with the code.</p>
+</div>
+
+<div class="firestorePic"></div>
+
+<div class="firestoreText"></div>
+
+<div class="background">
+    <div class="option1">
+        <svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="spin">
+            <rect id="bg" width="520" height="520" rx="100"/>
+            <g id="Group1">
+            <circle id="Ellipse1" cx="260" cy="106" r="26"/>
+            <circle id="Ellipse2" cx="414" cy="260" r="26"/>
+            <circle id="Ellipse3" cx="260" cy="414" r="26"/>
+            <circle id="Ellipse4" cx="106" cy="260" r="26"/>
+            </g>
+            </g>
+            </svg>
+            <style>
+:root {
+    --Group: #333;
+    --bg: #EAE6c1;
+}
+
+svg {
+   cursor: pointer;
+}
+
+#Group1 {
+   fill: var(--Group);
+}
+
+#bg {
+   fill: var(--bg);
+   border-radius: 60px 20px 60px 20px;
+}
+#Ellipse1,
+#Ellipse2,
+#Ellipse3,
+#Ellipse4 {
+   transition: all 1s ease ;
+   animation-iteration-count: infinite;
+}
+svg:hover #Ellipse1 {
+   transform: translateX(150px) translateY(150px);
+}
+svg:hover #Ellipse2 {
+   transform: translateX(-150px) translateY(150px);
+}
+svg:hover #Ellipse3 {
+   transform: translateX(-150px) translateY(-150px);
+}
+svg:hover #Ellipse4 {
+   transform: translateX(150px) translateY(-150px);
+}
+            </style>
+            <script>
+                 const svg = document.getElementById('#Group1');
+
+svg.onclick = (e) => {
+   const colors = ['#e3213e']
+   const random = () => colors[Math.floor(Math.random() * colors.length)];
+   document.querySelector() = `
+   --Group: ${random()};
+   --bg: ${random()};
+
+   `
+}
+            </script>
+    </div>
+    <div class="option2">
+        <svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="upDown">
+            <rect id="bg2" width="520" height="520" rx="100"/>
+            <g id="groupUp">
+            <circle id="EllipseU1" cx="176" cy="474" r="26"/>
+            <circle id="EllipseU2" cx="344" cy="474" r="26"/>
+            </g>
+            <g id="groupDown">
+            <circle id="EllipseD1" cgx="92" cy="46" r="26"/>
+            <circle id="EllipseD2" cx="260" cy="46" r="26"/>
+            <circle id="EllipseD3" cx="428" cy="46" r="26"/>
+            </g>
+            </g>
+            </svg>
+        
+            <style>
+                :root {
+                    --groupDown: #333;
+                    --groupUp: #333;
+                    --bg: #EAE6c1;
+                }
+
+                svg {
+                    cursor: pointer;
+                }
+
+                #upDown {
+                    fill: var(--bg);
+                    /* to add border-radius add a rx value at the bg (f.eks. rx="100px") */
+                /* border-radius: 60px 20px 60px 20px; */
+                    
+                }
+
+                #groupUp{
+                    fill: var(--groupUp);
+                }
+
+                #groupDown {
+                    fill: var(--groupUp)
+                }
+                #EllipseU1,
+                #EllipseU2,
+                #EllipseD1,
+                #EllipseD2,
+                #EllipseD3 {
+                    transition: all 1s ease;
+                }
+                svg:hover #EllipseU1 {
+                    transform: translateY(-420px);
+                }
+                svg:hover #EllipseU2 {
+                    transform: translateY(-420px);
+                }
+                svg:hover #EllipseD1 {
+                    transform: translateY(420px);
+                }
+                svg:hover #EllipseD2 {
+                    transform: translateY(420px);
+                }
+                svg:hover #EllipseD3 {
+                    transform: translateY(420px);
+                }
+            </style>
+    </div>
+    <div class="option3"></div>
+    <div class="option4"></div>
+</div>
+
+</body>
+</html>

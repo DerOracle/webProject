@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./login.html">login</a></li>
+        <li><a href="../Paralax/paralax.html">Paralax</a></li>
+    </ul>
+    
+
+    <div class="loginRec">
+        <h1 class="speakFriend">To enter the other site please speak friend</h1>
+        <div class="loginChild">
+            <form action="javascript.js">
+                <label for="uname">Username</label><br>
+                <input type="text" id="uname" name="uname"><br>
+                <label for="password">Password</label><br>
+                <input type="text" name="password" id="password"> 
+            </form><br>
+            <button class="loginButton">Login</button>
+            <button class="regButton"><a href="../register/register.html">Register</a></button>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getFirestore, collection, doc, addDoc, setDoc, getDoc, getDocs, query, where, orderBy, startAt, startAfter, endAt, limit, limitToLast } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"
+        import { getAuth, signInWithCustomToken, signInWithUsernameAndPassword } from "package:firebase_auth/firebase_auth.dart";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB12GB3E5E5SbBNbXfQzSu929hUqIOlxjY",
+          authDomain: "user-1bcc7.firebaseapp.com",
+          projectId: "user-1bcc7",
+          storageBucket: "user-1bcc7.appspot.com",
+          messagingSenderId: "248467209599",
+          appId: "1:248467209599:web:9e6d93613f4cf999fd2e4a"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        const db = getFirestore();
+
+        const auth = getAuth(firebaseConfig)
+
+        await signInWithCustomToken
+
+        
+    </script>
+</body>
+</html>

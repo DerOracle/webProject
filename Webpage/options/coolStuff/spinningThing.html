@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animated spinning thing</title>
+
+        <style> 
+        :root {
+             --Group-1: #d9d9d9;
+             --bG: #333;
+        }
+
+        svg {
+            cursor: pointer;
+        }
+
+        #Group1 {
+            fill: var(--Group-1);
+        }
+
+        #bG {
+            fill: var(--bG)
+        }
+        #Ellipse1,
+        #Ellipse2,
+        #Ellipse3,
+        #Ellipse4 {
+            transition: all 1s ease ;
+            animation-iteration-count: infinite;
+        }
+        svg:hover #Ellipse1 {
+            transform: translateX(150px) translateY(150px);
+        }
+        svg:hover #Ellipse2 {
+            transform: translateX(-150px) translateY(150px);
+        }
+        svg:hover #Ellipse3 {
+            transform: translateX(-150px) translateY(-150px);
+        }
+        svg:hover #Ellipse4 {
+            transform: translateX(150px) translateY(-150px);
+        }
+
+        </style>
+            
+    </head>
+    <body>
+        <svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="520" height="520" fill="#1E1E1E"/>
+            <rect id="gB" width="520" height="520" fill="#333333"/>
+            <g id="Group 1">
+            <circle id="Ellipse1" cx="260" cy="106" r="26" fill="#D9D9D9"/>
+            <circle id="Ellipse2" cx="414" cy="260" r="26" fill="#D9D9D9"/>
+            <circle id="Ellipse3" cx="260" cy="414" r="26" fill="#D9D9D9"/>
+            <circle id="Ellipse4" cx="106" cy="260" r="26" fill="#D9D9D9"/>
+            </g>
+            </svg>
+    </body>
+</html>

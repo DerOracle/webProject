@@ -1,0 +1,221 @@
+body {
+    background-color: #333;
+}
+
+.projectPic{
+    background-image: url("./Paralax/projectPic.png");
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* want position to be "fixed" (follow screen) and overlap over divs, unable to fix rn :(.... */
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    margin: 0;
+    padding: 16px 20px;
+    display: block;
+    
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.rectangle {
+    width: 100%;
+    Height: 350px;
+    margin: 0;
+    padding: -1px;
+    background: #EAE6C1;
+    border-radius: 0px 0px 60px 60px;
+    position:absolute;
+}
+
+.javaPic {
+    padding: 300px;
+    background-image: url("./Paralax/index.jsPic.png");
+
+    
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rectangleSqlite {
+    width: 100%;
+    height: 1350px;
+    margin: 0;
+    padding: -1px;
+    background-color:#333;
+    border-color: #EAE6C1;
+    border-width: 100px;
+    border-radius: 0px 0px 60px 60px;
+    position: absolute;
+}
+
+.sqliteTitle {
+    text-align: center;
+    color: #EAE6C1;
+}
+
+.sqliteText {
+    text-align: center;
+    color: #EAE6C1;
+    position: relative;
+}
+
+.sqliteTableP {
+    text-align: center;
+    color: #EAE6C1;
+    position: relative;
+
+    top: 190px;
+}
+
+.createTable {
+    background-image: url('./sqlite3Pics/sqlite3Insert.png'); 
+    left: 22.5%;
+
+    width: 1038px;
+    height: 180px;
+    position: absolute;
+}
+
+.sqliteAxios {
+    background-image: url('./sqlite3Pics/sqlite3Axios.png');
+    left: 32.5%;
+    top: 200px;
+
+    width: 653px;
+    height: 190px;
+    position: relative;
+}
+
+.sqliteAxiosP {
+    text-align: center;
+    color: #EAE6C1;
+    position: relative;
+
+    top: 200px;
+}
+
+.sqliteClose {
+    background-image: url(./sqlite3Pics/sqlite3Close.png);
+    left: 37%;
+    top: 200px;
+
+    width: 463px;
+    height: 112px;
+    position: relative;
+}
+
+.sqliteCloseP {
+    text-align: center;
+    color: #EAE6C1;
+    position: relative;
+
+    top: 200px;
+}
+
+.sqliteSelect {
+    background-image: url('./sqlite3Pics/sqlite3Select.png');
+    left: 38%;
+    top: 200px;
+
+    width: 477px;
+    height: 197px;
+    position: relative;
+}
+
+.sqliteSelectP {
+    text-align: center;
+    color: #EAE6C1;
+    position: relative;
+
+    top: 200px;
+}
+
+.firestorePic {
+    padding: 800px;
+    background-image: url('./Paralax/Firestore.png');
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firestoreText {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+
+    background-color:#EAE6C1;
+    border-radius: 0px 0px 60px 60px;
+    position: absolute;
+}
+
+.background {
+    top: 350px;
+    width: 100%;
+    height: 2000px;
+    background-color: #333;
+    position: relative;
+}
+
+.option1 {
+    /* background-image: url('./options/option1.jpg'); */
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 20px 60px 20px 60px;
+}
+
+
+
+.option2 {
+    /* background-image: url('./options/option2.jpg'); */
+    /* background-color: #111; */
+    top: 10%;
+    left: 30%;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 60px 20px 60px 20px;
+}
